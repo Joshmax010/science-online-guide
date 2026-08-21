@@ -2,7 +2,7 @@
 
 一份写给零基础小白的开放教程：教你用开源客户端搭配机场，5 分钟跑通第一次，常见问题逐个排查。
 
-🌐 **在线阅读**：https://your-project.pages.dev
+🌐 **在线阅读**：https://science-online-guide.pages.dev
 
 ---
 
