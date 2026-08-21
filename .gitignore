@@ -1,0 +1,20 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+.vitepress/
+*.log
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 环境
+.env
+.env.local
+
+# 临时
+tmp/
+temp/
