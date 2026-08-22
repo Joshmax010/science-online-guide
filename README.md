@@ -2,7 +2,10 @@
 
 一份写给零基础小白的开放教程：教你用开源客户端搭配机场，5 分钟跑通第一次，常见问题逐个排查。
 
-🌐 **在线阅读**：https://science-online-guide.pages.dev
+- 🌐 **在线阅读**：https://science-online-guide.pages.dev
+
+> 本文档由作者实际使用三年多经验整理，包含多家机场的实测邀请链接，可放心使用。
+> 反馈与交流：可通过 GitHub Issue 或作者联系方式。
 
 ---
 
@@ -67,6 +70,19 @@ npm run docs:preview
 ## 贡献
 
 发现错误、步骤过时、或想贡献内容？欢迎提 Issue 或 PR！
+
+---
+
+## 推荐机场一览（推广）
+
+| 机场 | 邀请链接 | 说明 |
+|------|----------|------|
+| 一分机场 | [https://xn--4gqx1hgtfdmt.com/#/register?code=H1NYycCi](https://xn--4gqx1hgtfdmt.com/#/register?code=H1NYycCi) | 老牌，自用三年多，可买断流量 |
+| 魔戒机场 | [https://47.242.128.61:8000/register?aff=H0yhxAKy](https://47.242.128.61:8000/register?aff=H0yhxAKy) | 同运营商还有八戒机场，套餐类型多 |
+| 魔戒导航站 | [https://129.226.120.177:8000/](https://129.226.120.177:8000/) | 国内直连 |
+| 蓝海加速 | [https://app.lanhai.in:7779/#/register?code=brnPPIXz](https://app.lanhai.in:7779/#/register?code=brnPPIXz) | 节点稳定，国内直连，缺点是稍贵 |
+
+> 💡 iOS 用户如需 Shadowrocket，可联系作者获取（美区 ID + 已购账号）。
 
 ---
 

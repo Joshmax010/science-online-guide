@@ -12,6 +12,8 @@
 2. 下载最新的 APK 文件（推荐 `v2rayNG_*_arm64-v8a.apk`）
 3. 点击安装，如果提示"未知来源"，在设置中允许安装
 
+![v2rayNG GitHub 发布页](/images/image10.png)
+
 ### 第二步：导入机场订阅
 
 1. 打开 v2rayNG
@@ -41,6 +43,8 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 **Stash** 或 **S
 
 > ⚠️ **注意**：一定要下载标注 **"小火箭"** 即 **Shadowrocket** 的那个版本。
 
+![Shadowrocket App Store 选择](/images/image11.png)
+
 如果 App Store 里搜不到，可能是地区限制，参考 [08 常见问题](/08-faq) 的"App Store 搜不到客户端"。
 
 ### 第二步：导入机场订阅
@@ -52,11 +56,15 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 **Stash** 或 **S
 5. 在标注的 **"URL"** 处将订阅链接粘贴，点击右上角 **"Save"** 保存
 6. 更新订阅，获取节点列表
 
+![Shadowrocket 导入订阅](/images/image12.png)
+
 ### 第三步：连接
 
 1. 选择一个节点
 2. 点击 **"连接"**
 3. 首次连接时，系统会提示 **"允许 VPN 配置"**，选择 **"允许"** 并验证
+
+![Shadowrocket 连接成功 - VPN 状态显示](/images/image13.png)
 
 > 手机右上角状态栏显示 **"VPN"** 字样，并且 Google、Telegram 等软件能正常打开浏览 → **连接成功！**
 

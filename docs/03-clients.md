@@ -89,3 +89,7 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 **Stash** 或 **S
 | 多设备统一 | FlClash |
 
 选好客户端后，下一步是选机场——见 [04 机场推荐](/04-airports)。
+
+---
+
+![客户端对比图](/images/image3.jpeg)
