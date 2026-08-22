@@ -54,7 +54,7 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 3. 点击购买并下载安装
 
-![image\.png](/images/image 3.png)
+![image\.png](/images/image%203.png)
 
 > 如果 App Store 里搜不到，可能是地区限制，参考 [08 常见问题](08-faq) 的"App Store 搜不到客户端"。
 > 
@@ -70,9 +70,9 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 4. 更新订阅，获取节点列表
 
-![image\.png](/images/image 4.png)
+![image\.png](/images/image%204.png)
 
-![image\.png](/images/image 1.png)
+![image\.png](/images/image%201.png)
 
 #### 第三步：连接
 

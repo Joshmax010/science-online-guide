@@ -66,7 +66,7 @@
 
 1. 点击左侧"代理"（Proxies）标签
 
-![image\.png](/images/image 2.png)
+![image\.png](/images/image%202.png)
 
 2. 在节点列表中选择一个节点（建议先选香港或离你近的节点）
 
