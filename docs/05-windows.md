@@ -18,7 +18,7 @@
 
 中文站应该是这个：
 
-[https://clashrev.com.cn/index.html]()
+[https://clashrev.com.cn/index.html](https://clashrev.com.cn/index.html)
 
 2. 找到最新的 Windows 版本（文件名通常含 `x64` 或 `x86`），GitHub点击上图右下角releases哪里的Clash Verge Rev v2\.5\.2，跳转到新页面找对应文件包，macOS同理
 
