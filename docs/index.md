@@ -1,31 +1,69 @@
 # 科学上网完全指南
 
 > 一份写给零基础小白的开放教程：教你用开源客户端搭配机场，5 分钟跑通第一次，常见问题逐个排查。
-> 
-> 
 
-**这是一份开放文档**，任何人都可以阅读、转发、反馈。如果你照着做遇到了问题，或者发现哪里过时了，欢迎在评论区留言，我们会持续更新。
+**这是一份开放文档**，任何人都可以阅读、转发、反馈。如果你照着做遇到了问题，或者发现哪里过时了，欢迎在 [GitHub 仓库](https://github.com/Joshmax010/science-online-guide) 留言，我们会持续更新。
 
 ---
 
-## 目录
+## ✨ 本文亮点
 
-- [01 为什么需要科学上网](/01-why)
+- 🎓 **零基础友好** — 不预设任何背景知识，从「为什么需要」讲到「怎么配置」再到「出问题了怎么办」
+- 💻 **全平台覆盖** — Windows、macOS、安卓、iPhone，一个文档搞定所有设备
+- 🔗 **实测推荐** — 作者自用三年多的机场实测邀请链接，可放心试用
+- 🖼️ **图文并茂** — 每个操作步骤都配有截图，照着点就能跑通
+- 🔄 **持续更新** — 内容随机场和客户端变化持续更新
 
-- [02 基础概念](/02-concepts)
+---
 
-- [03 客户端选择](/03-clients)
+## 📖 目录
 
-- [04 机场推荐](/04-airports)
+| 章节 | 内容 |
+|------|------|
+| [01 为什么需要科学上网](/01-why) | 使用场景、能带来什么、需要知道的风险 |
+| [02 基础概念](/02-concepts) | 墙、代理、加密、节点、机场、订阅……一次搞懂 |
+| [03 客户端选择](/03-clients) | Clash 系 / v2ray 系对比，各平台怎么选 |
+| [04 机场推荐](/04-airports) | 怎么判断机场靠不靠谱 + 实测推荐清单 |
+| [05 Windows 操作（Clash Verge Rev）](/05-windows) | 从下载到连接，六步跑通 |
+| [06 手机配置](/06-mobile) | 安卓（v2rayNG）+ iPhone（Shadowrocket）全流程 |
+| [07 聚合 App 与机场的差异](/07-comparison) | 省事 vs 省钱，该怎么选 |
+| [08 常见问题](/08-faq) | 连不上、速度慢、下载失败……逐个排查 |
+| [09 安全与免责](/09-safety) | 必读：安全使用建议与免责声明 |
 
-- [05 Windows 操作（Clash Verge Rev）](/05-windows)
+---
 
-- [06 手机配置](/06-mobile)
+## 🚀 快速开始
 
-- [07 聚合 App 与机场的差异](/07-comparison)
+已经等不及了？三步直接上手：
 
-- [08 常见问题](/08-faq)
+1. 去 [04 机场推荐](/04-airports) 选一个机场，购买并拿到订阅链接
+2. 按 [05 Windows 操作](/05-windows) 或 [06 手机配置](/06-mobile) 装好客户端
+3. 遇到问题先查 [08 常见问题](/08-faq)
 
-- [09 安全与免责](/09-safety)
+> ⚠️ **法律与风险提示**：不同地区对网络访问工具的规定不同。使用前请了解并遵守你所在地区的法律法规。详见 [安全与免责](/09-safety)。
+
+---
+
+## 💬 反馈与贡献
+
+发现错误、步骤过时、或想贡献内容？欢迎前往 [GitHub 仓库](https://github.com/Joshmax010/science-online-guide) 提 [Issue](https://github.com/Joshmax010/science-online-guide/issues) 或 [PR](https://github.com/Joshmax010/science-online-guide/pulls)。
+
+| 渠道 | 链接 |
+|------|------|
+| 🐛 提交问题 / 反馈错误 | [GitHub Issues](https://github.com/Joshmax010/science-online-guide/issues) |
+| 📖 在线阅读源文件 | [docs/ 目录](https://github.com/Joshmax010/science-online-guide/tree/main/docs) |
+| 🔧 贡献代码 / 内容修改 | [Pull Requests](https://github.com/Joshmax010/science-online-guide/pulls) |
+
+反馈时请提供：**设备型号、系统版本、客户端名称与版本、具体操作步骤、报错信息或截图**，以便快速定位问题。
+
+---
+
+## 🙏 支持
+
+感谢阅读。希望这份文档能帮你顺利、安全地获取你需要的网络资源。
+
+如果有帮助到您，可以给 [GitHub 仓库](https://github.com/Joshmax010/science-online-guide) 点个 ⭐ Star 支持一下，创作不易，谢谢！
+
+有需要 iOS Shadowrocket（小火箭）、自己不知道怎么下载的，也可以联系作者获取。
 
 ---
