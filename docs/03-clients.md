@@ -38,11 +38,11 @@
 
 ### 怎么选
 
-**Windows 用户**：首选 Clash Verge Rev。界面现代、功能完整、持续维护，导入机场订阅后开箱即用。操作步骤见 05 Windows 操作。央视严选，哈哈哈。
+**Windows 用户**：首选 Clash Verge Rev。界面现代、功能完整、持续维护，导入机场订阅后开箱即用。操作步骤见 [05 Windows 操作](05-windows)。央视严选，哈哈哈。
 
 ![微信图片\_20260808101950\_14797\_4\.jpg](/images/微信图片_20260808101950_14797_4.jpg)
 
-**安卓用户**：首选 v2rayNG。安卓端最流行、最稳定，界面简洁，导入订阅即可。操作步骤见 06 手机配置。
+**安卓用户**：首选 v2rayNG。安卓端最流行、最稳定，界面简洁，导入订阅即可。操作步骤见 [06 手机配置](06-mobile)。
 
 ![Screenshot\_20260816\_163339\_com\_v2ray\_ang\_MainActivity\.jpg](/images/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg)
 
@@ -76,7 +76,7 @@
 
 ### 小结
 
-选客户端不用纠结，**按你的设备选主流推荐即可**：Windows 用 Clash Verge Rev，安卓用 v2rayNG，iPhone 用 Stash 或 Shadowrocket。选好客户端后，下一步是选机场——见 04 机场推荐。
+选客户端不用纠结，**按你的设备选主流推荐即可**：Windows 用 Clash Verge Rev，安卓用 v2rayNG，iPhone 用 Stash 或 Shadowrocket。选好客户端后，下一步是选机场——见 [04 机场推荐](04-airports)。
 
 ---
 
