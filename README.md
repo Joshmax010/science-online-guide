@@ -22,17 +22,19 @@
 
 ## 目录
 
-| 章节 | 内容 | 链接 |
-|------|------|------|
-| 01 | 为什么需要科学上网 | [阅读](/01-why) |
-| 02 | 基础概念 | [阅读](/02-concepts) |
-| 03 | 客户端选择 | [阅读](/03-clients) |
-| 04 | 机场推荐 | [阅读](/04-airports) |
-| 05 | Windows 操作 | [阅读](/05-windows) |
-| 06 | 手机配置 | [阅读](/06-mobile) |
-| 07 | 聚合 App 与机场的差异 | [阅读](/07-comparison) |
-| 08 | 常见问题 | [阅读](/08-faq) |
-| 09 | 安全与免责 | [阅读](/09-safety) |
+> 💡 推荐在[在线网站](https://science-online-guide.pages.dev)阅读，体验更好（带导航栏、搜索、图片）。
+
+| 章节 | 内容 | 网站阅读 | GitHub 阅读 |
+|------|------|----------|-------------|
+| 01 | 为什么需要科学上网 | [阅读](https://science-online-guide.pages.dev/01-why) | [查看](docs/01-why.md) |
+| 02 | 基础概念 | [阅读](https://science-online-guide.pages.dev/02-concepts) | [查看](docs/02-concepts.md) |
+| 03 | 客户端选择 | [阅读](https://science-online-guide.pages.dev/03-clients) | [查看](docs/03-clients.md) |
+| 04 | 机场推荐 | [阅读](https://science-online-guide.pages.dev/04-airports) | [查看](docs/04-airports.md) |
+| 05 | Windows 操作 | [阅读](https://science-online-guide.pages.dev/05-windows) | [查看](docs/05-windows.md) |
+| 06 | 手机配置 | [阅读](https://science-online-guide.pages.dev/06-mobile) | [查看](docs/06-mobile.md) |
+| 07 | 聚合 App 与机场的差异 | [阅读](https://science-online-guide.pages.dev/07-comparison) | [查看](docs/07-comparison.md) |
+| 08 | 常见问题 | [阅读](https://science-online-guide.pages.dev/08-faq) | [查看](docs/08-faq.md) |
+| 09 | 安全与免责 | [阅读](https://science-online-guide.pages.dev/09-safety) | [查看](docs/09-safety.md) |
 
 ---
 
@@ -93,7 +95,7 @@ npm run docs:preview
 - 因使用本教程内容产生的任何法律后果，**由使用者自行承担**
 - 推荐的第三方服务不构成担保，**风险自担**
 
-详见 [安全与免责](/09-safety)。
+详见 [安全与免责](https://science-online-guide.pages.dev/09-safety)（网站）或 [docs/09-safety.md](docs/09-safety.md)（GitHub）。
 
 ---
 
