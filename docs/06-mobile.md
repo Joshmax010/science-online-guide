@@ -1,3 +1,7 @@
+[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows)
+
+---
+
 本章分安卓和 iPhone 两部分。核心和电脑一样：**装客户端、导入订阅、选节点、连接**。
 
 ---
@@ -95,3 +99,5 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 配置完成，去 07 聚合app与机场差异 了解不同方案的区别，或阅读 08 常见问题。
 
 ---
+
+[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows) ｜ [下一篇：07 聚合 App 与机场的差异 →](07-comparison)

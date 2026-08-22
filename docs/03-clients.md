@@ -1,3 +1,7 @@
+[← 上一篇：02 基础概念](02-concepts)
+
+---
+
 这一章帮你搞清楚：市面上有哪些客户端、各自有什么差异、你应该用哪个。核心结论先放前面：**Windows 用 Clash Verge Rev或者v2rayN，安卓用 v2rayNG，iPhone 用 sing\-box 或 Shadowrocket**。下面解释为什么。
 
 ---
@@ -75,3 +79,5 @@
 选客户端不用纠结，**按你的设备选主流推荐即可**：Windows 用 Clash Verge Rev，安卓用 v2rayNG，iPhone 用 Stash 或 Shadowrocket。选好客户端后，下一步是选机场——见 04 机场推荐。
 
 ---
+
+[← 上一篇：02 基础概念](02-concepts) ｜ [下一篇：04 机场推荐 →](04-airports)
