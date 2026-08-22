@@ -2,7 +2,7 @@
 
 ---
 
-这一章帮你搞清楚：市面上有哪些客户端、各自有什么差异、你应该用哪个。核心结论先放前面：**Windows 用 Clash Verge Rev或者v2rayN，安卓用 v2rayNG，iPhone 用 sing\-box 或 Shadowrocket**。下面解释为什么。
+这一章帮你搞清楚：市面上有哪些客户端、各自有什么差异、你应该用哪个。核心结论先放前面：**Windows 用 Clash Verge Rev或者v2rayN，安卓用 v2rayNG，iPhone 用 sing-box 或 Shadowrocket**。下面解释为什么。
 
 ---
 
@@ -40,15 +40,15 @@
 
 **Windows 用户**：首选 Clash Verge Rev。界面现代、功能完整、持续维护，导入机场订阅后开箱即用。操作步骤见 [05 Windows 操作](05-windows)。央视严选，哈哈哈。
 
-![微信图片\_20260808101950\_14797\_4\.jpg](/images/微信图片_20260808101950_14797_4.jpg)
+![微信图片_20260808101950_14797_4.jpg](/images/微信图片_20260808101950_14797_4.webp)
 
 **安卓用户**：首选 v2rayNG。安卓端最流行、最稳定，界面简洁，导入订阅即可。操作步骤见 [06 手机配置](06-mobile)。
 
-![Screenshot\_20260816\_163339\_com\_v2ray\_ang\_MainActivity\.jpg](/images/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg)
+![Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg](/images/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.webp)
 
-**iPhone 用户**：iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowrocket。两者都支持机场订阅，Stash 更贴近 Clash 体验，Shadowrocket 协议支持更广，是较为主流的iOS科学上网软件，shadowrocket下载需要美区ID且需要付费，较为复杂，有需要的不愿意麻烦自己注册的可以联系作者获取\#
+**iPhone 用户**：iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowrocket。两者都支持机场订阅，Stash 更贴近 Clash 体验，Shadowrocket 协议支持更广，是较为主流的iOS科学上网软件，shadowrocket下载需要美区ID且需要付费，较为复杂，有需要的不愿意麻烦自己注册的可以联系作者获取#
 
-![6d520a53ba786521aed5d1b41f8e7db4\.jpg](/images/6d520a53ba786521aed5d1b41f8e7db4.jpg)
+![6d520a53ba786521aed5d1b41f8e7db4.jpg](/images/6d520a53ba786521aed5d1b41f8e7db4.webp)
 
 **多设备用户**：FlClash 跨平台，一个客户端覆盖 Windows / macOS / 安卓 / iOS，适合想统一体验的人。
 

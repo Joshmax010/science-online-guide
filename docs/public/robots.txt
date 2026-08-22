@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://science-online-guide.pages.dev/sitemap.xml

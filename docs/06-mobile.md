@@ -12,7 +12,7 @@
 
 1. 打开浏览器，进入 v2rayNG 的 GitHub 发布页，也可进入[第三章](03-clients)各个客户端下载地址里找
 
-![capture\_20260816142858869\.png](/images/capture_20260816142858869.png)
+![capture_20260816142858869.png](/images/capture_20260816142858869.webp)
 
 2. 下载最新的 APK 文件，依旧是点击右下角releases，进去找对应版本，不知道哪个版本问豆包
 
@@ -22,7 +22,7 @@
 
 1. 打开 v2rayNG
 
-2. 点击右上角"\+"号，选择"从剪贴板导入订阅"或"添加订阅"
+2. 点击右上角"+"号，选择"从剪贴板导入订阅"或"添加订阅"
 
 3. 粘贴机场提供的订阅链接
 
@@ -54,7 +54,7 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 3. 点击购买并下载安装
 
-![image\.png](/images/image%203.png)
+![image.png](/images/image%203.webp)
 
 > 如果 App Store 里搜不到，可能是地区限制，参考 [08 常见问题](08-faq) 的"App Store 搜不到客户端"。
 > 
@@ -70,9 +70,9 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 4. 更新订阅，获取节点列表
 
-![image\.png](/images/image%204.png)
+![image.png](/images/image%204.webp)
 
-![image\.png](/images/image%201.png)
+![image.png](/images/image%201.webp)
 
 #### 第三步：连接
 
@@ -82,7 +82,7 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 3. 首次连接时，系统会提示"允许 VPN 配置"，选择"允许"并验证
 
-![image\.png](/images/image.png)
+![image.png](/images/image.webp)
 
 
 

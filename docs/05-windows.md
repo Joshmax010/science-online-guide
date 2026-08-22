@@ -14,13 +14,13 @@
 
 1. 打开浏览器，进入 Clash Verge Rev 的 GitHub 发布页：
 
-![capture\_20260816134029557\.png](/images/capture_20260816134029557.png)
+![capture_20260816134029557.png](/images/capture_20260816134029557.webp)
 
 中文站应该是这个：
 
 [https://clashrev.com.cn/index.html](https://clashrev.com.cn/index.html)
 
-2. 找到最新的 Windows 版本（文件名通常含 `x64` 或 `x86`），GitHub点击上图右下角releases哪里的Clash Verge Rev v2\.5\.2，跳转到新页面找对应文件包，macOS同理
+2. 找到最新的 Windows 版本：点击仓库页面右侧的 **Releases**（或直接访问 https://github.com/clash-verge-rev/clash-verge-rev/releases/latest ），在最新版本（如 v2.5.2）下方的 Assets 里找到对应文件包，macOS 同理
 
 3. 点击下载 `.exe` 安装包
 
@@ -48,7 +48,7 @@
 
 安装完成后打开 Clash Verge Rev，导入你从机场购买的订阅链接：
 
-![capture\_20260816135750286\.png](/images/capture_20260816135750286.png)
+![capture_20260816135750286.png](/images/capture_20260816135750286.webp)
 
 1. 点击左侧"订阅"（Profiles）标签
 
@@ -66,7 +66,7 @@
 
 1. 点击左侧"代理"（Proxies）标签
 
-![image\.png](/images/image%202.png)
+![image.png](/images/image%202.webp)
 
 2. 在节点列表中选择一个节点（建议先选香港或离你近的节点）
 
@@ -74,13 +74,12 @@
 
 ---
 
-### 第五步：验证是否成
+### 第五步：验证是否成功
 
-1. 打开浏览器，访问一个之前打不开的网站，以谷歌搜索gpt为例
-
+1. 打开浏览器，访问一个之前打不开的网站（以谷歌搜索 ChatGPT 为例）
 2. 能正常打开即成功
 
-![capture\_20260816141758629\.png](/images/capture_20260816141758629.png)
+![capture_20260816141758629.png](/images/capture_20260816141758629.webp)
 
 ---
 

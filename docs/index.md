@@ -2,6 +2,10 @@
 
 > 一份写给零基础小白的开放教程：教你用开源客户端搭配机场，5 分钟跑通第一次，常见问题逐个排查。
 
+<div style="display:inline-block; padding:4px 14px; margin:8px 0; background:var(--vp-c-brand-soft); border-radius:20px; font-size:0.9em;">
+  🕒 内容最后更新：<strong>2026-08-22</strong>（持续更新中）
+</div>
+
 **这是一份开放文档**，任何人都可以阅读、转发、反馈。如果你照着做遇到了问题，或者发现哪里过时了，欢迎在 [GitHub 仓库](https://github.com/Joshmax010/science-online-guide) 留言，我们会持续更新。
 
 ---
