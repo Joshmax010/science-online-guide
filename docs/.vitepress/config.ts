@@ -66,10 +66,7 @@ export default defineConfig({
       copyright: '风险自担 · 遵守当地法律法规',
     },
 
-    editLink: {
-      pattern: 'https://github.com/Joshmax010/science-online-guide/edit/main/docs/:path',
-      text: '在 GitHub 上编辑此页',
-    },
+    editLink: false,
 
     docFooter: {
       prev: '上一篇',
