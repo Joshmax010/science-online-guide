@@ -1,4 +1,4 @@
-[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows)
+[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows.md)
 
 ---
 
@@ -10,7 +10,7 @@
 
 #### 第一步：安装 v2rayNG
 
-1. 打开浏览器，进入 v2rayNG 的 GitHub 发布页，也可进入[第三章](03-clients)各个客户端下载地址里找
+1. 打开浏览器，进入 v2rayNG 的 GitHub 发布页，也可进入[第三章](03-clients.md)各个客户端下载地址里找
 
 ![capture_20260816142858869.png](./images/capture_20260816142858869.webp)
 
@@ -56,7 +56,7 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 ![image.png](./images/image3.webp)
 
-> 如果 App Store 里搜不到，可能是地区限制，参考 [08 常见问题](08-faq) 的"App Store 搜不到客户端"。
+> 如果 App Store 里搜不到，可能是地区限制，参考 [08 常见问题](08-faq.md) 的"App Store 搜不到客户端"。
 > 
 > 
 
@@ -90,14 +90,14 @@ iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowr
 
 ### 手机端常见问题速查
 
-- 连接成功但无法上网 → 见 [08 常见问题](08-faq)
+- 连接成功但无法上网 → 见 [08 常见问题](08-faq.md)
 
 - 安卓提示"未知来源" → 按本章安卓第一步处理
 
 - iPhone 提示"VPN 配置" → 选择允许即可
 
-配置完成，去 [07 聚合app与机场差异](07-comparison) 了解不同方案的区别，或阅读 [08 常见问题](08-faq)。
+配置完成，去 [07 聚合app与机场差异](07-comparison.md) 了解不同方案的区别，或阅读 [08 常见问题](08-faq.md)。
 
 ---
 
-[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows) ｜ [下一篇：07 聚合 App 与机场的差异 →](07-comparison)
+[← 上一篇：05 Windows 操作（Clash Verge Rev）](05-windows.md) ｜ [下一篇：07 聚合 App 与机场的差异 →](07-comparison.md)
