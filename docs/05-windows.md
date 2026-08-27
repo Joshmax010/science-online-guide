@@ -14,7 +14,7 @@
 
 1. 打开浏览器，进入 Clash Verge Rev 的 GitHub 发布页：
 
-![capture_20260816134029557.png](/images/capture_20260816134029557.webp)
+![capture_20260816134029557.png](./images/capture_20260816134029557.webp)
 
 中文站应该是这个：
 
@@ -48,7 +48,7 @@
 
 安装完成后打开 Clash Verge Rev，导入你从机场购买的订阅链接：
 
-![capture_20260816135750286.png](/images/capture_20260816135750286.webp)
+![capture_20260816135750286.png](./images/capture_20260816135750286.webp)
 
 1. 点击左侧"订阅"（Profiles）标签
 
@@ -66,7 +66,7 @@
 
 1. 点击左侧"代理"（Proxies）标签
 
-![image.png](/images/image%202.webp)
+![image.png](./images/image2.webp)
 
 2. 在节点列表中选择一个节点（建议先选香港或离你近的节点）
 
@@ -79,7 +79,7 @@
 1. 打开浏览器，访问一个之前打不开的网站（以谷歌搜索 ChatGPT 为例）
 2. 能正常打开即成功
 
-![capture_20260816141758629.png](/images/capture_20260816141758629.webp)
+![capture_20260816141758629.png](./images/capture_20260816141758629.webp)
 
 ---
 

@@ -40,15 +40,15 @@
 
 **Windows 用户**：首选 Clash Verge Rev。界面现代、功能完整、持续维护，导入机场订阅后开箱即用。操作步骤见 [05 Windows 操作](05-windows)。央视严选，哈哈哈。
 
-![微信图片_20260808101950_14797_4.jpg](/images/微信图片_20260808101950_14797_4.webp)
+![微信图片_20260808101950_14797_4.jpg](./images/微信图片_20260808101950_14797_4.webp)
 
 **安卓用户**：首选 v2rayNG。安卓端最流行、最稳定，界面简洁，导入订阅即可。操作步骤见 [06 手机配置](06-mobile)。
 
-![Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg](/images/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.webp)
+![Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg](./images/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.webp)
 
 **iPhone 用户**：iOS 没有免费的开源 Clash 客户端，主流是付费的 Stash 或 Shadowrocket。两者都支持机场订阅，Stash 更贴近 Clash 体验，Shadowrocket 协议支持更广，是较为主流的iOS科学上网软件，shadowrocket下载需要美区ID且需要付费，较为复杂，有需要的不愿意麻烦自己注册的可以联系作者获取#
 
-![6d520a53ba786521aed5d1b41f8e7db4.jpg](/images/6d520a53ba786521aed5d1b41f8e7db4.webp)
+![6d520a53ba786521aed5d1b41f8e7db4.jpg](./images/6d520a53ba786521aed5d1b41f8e7db4.webp)
 
 **多设备用户**：FlClash 跨平台，一个客户端覆盖 Windows / macOS / 安卓 / iOS，适合想统一体验的人。
 
