@@ -8,18 +8,20 @@
 
 <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:12px 0 4px; font-size:0.9em;">
   <span style="display:inline-flex; align-items:center; gap:6px; padding:4px 12px; background:var(--vp-c-default-soft); border-radius:16px;">
-    👁️ <span>总浏览 <span id="busuanzi_page_pv" title="总浏览量">...</span> 次</span>
+    👁️ <span>累计浏览 <span id="busuanzi_value_site_pv" title="全站总浏览量">...</span> 次</span>
   </span>
   <span style="display:inline-flex; align-items:center; gap:6px; padding:4px 12px; background:var(--vp-c-default-soft); border-radius:16px;">
-    🧭 <span>访客 <span id="busuanzi_page_uv" title="独立访客数">...</span> 人</span>
+    🧭 <span>累计访客 <span id="busuanzi_value_site_uv" title="全站独立访客">...</span> 人</span>
   </span>
   <a href="./08-faq.html#comments" style="display:inline-flex; align-items:center; gap:6px; padding:4px 12px; background:var(--vp-c-default-soft); border-radius:16px; text-decoration:none; color:var(--vp-c-text-1);">
     💬 <span>去评论区留言</span>
   </a>
 </div>
 
-<!-- 不蒜子浏览量统计（客户端拉取，国内可访问） -->
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- 不蒜子浏览量统计：用 v-html 注入 raw script 让 VitePress 跳过 ESM 解析 -->
+<div v-pre style="display:none;">
+  <script async src="/busuanzi.pure.mini.js"></script>
+</div>
 
 **这是一份开放文档**，任何人都可以阅读、转发、反馈。如果你照着做遇到了问题，或者发现哪里过时了，欢迎在 [GitHub 仓库](https://github.com/Joshmax010/science-online-guide) 留言，我们会持续更新。
 
