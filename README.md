@@ -130,6 +130,17 @@ npm run docs:preview
 
 ---
 
+## 🙏 致谢
+
+本项目由作者基于三年实际使用经验整理，并在以下 AI 工具的辅助下完成：
+
+- 🤖 **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** —— 提供本地开发环境、终端操作、文件编辑、Git 提交流程等工具支持
+- 🧠 **[Claude](https://github.com/anthropics/claude-code)** —— 协助内容结构化、代码片段、文档润色与排版
+
+感谢开源社区让一个人也能维护一份完整的开放教程。
+
+---
+
 ## 📄 许可证
 
 - 文档：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) —— 署名-非商业-相同方式共享
