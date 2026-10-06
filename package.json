@@ -7,7 +7,12 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "verify:originals": "node scripts/verify-originals.mjs",
+    "test": "node --test tests/originals.test.mjs tests/portability.test.mjs"
+  },
+  "engines": {
+    "node": ">=22 <23"
   },
   "devDependencies": {
     "medium-zoom": "^1.1.0",

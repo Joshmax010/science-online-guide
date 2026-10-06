@@ -1,0 +1,7 @@
+# Portable source text uses LF on every operating system.
+* text=auto eol=lf
+
+# Preserve author-provided originals byte-for-byte, including Markdown.
+originals/** -text -whitespace
+originals/manifest.json text eol=lf
+originals/README.md text eol=lf

@@ -17,3 +17,12 @@ Thumbs.db
 # 临时
 tmp/
 temp/
+
+# 迁移备份和 Python 缓存（备份输出放在仓库外）
+*.bundle
+*.zip
+*.zip.sha256
+__pycache__/
+*.pyc
+.env.*
+!.env.example

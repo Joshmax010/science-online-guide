@@ -21,7 +21,7 @@
 - 🎓 **零基础友好** —— 不预设任何背景知识
 - 💻 **全平台覆盖** —— Windows / macOS / iOS / Android
 - 📊 **实测推荐** —— 多家机场的实测邀请链接，作者自用 3 年
-- 🖼️ **图文并茂** —— 14 张全流程截图
+- 🖼️ **图文并茂** —— 13 张全流程截图
 - 🔄 **持续更新** —— 客户端版本、机场、踩过的坑都同步维护
 - 🤝 **开放协作** —— 文档托管在 GitHub，欢迎提 Issue / PR
 
@@ -80,17 +80,31 @@
 
 ---
 
+## 🧰 维护与换设备接手
+
+- [维护手册](MAINTENANCE.md)：新设备恢复、项目约定、外部服务和已知待办。
+- [AI 接手约定](AGENTS.md)：新会话先读，维护不依赖旧聊天记录。
+- [原始资料](originals/README.md)：原版 DOCX、Markdown、13 张原图及 SHA-256 清单。
+- [部署与账号迁移](DEPLOY.md)：继续维护现有 Cloudflare Pages 或重建站点。
+- [备份工具](scripts/backup.py)：导出含源码、原件、Git 历史和静态网站的 ZIP；需要 Python 3.9+。
+
+公共文件只使用相对路径；设备配置和账号密钥不随仓库转移。旧 Git 历史按作者选择保留。
+
+---
+
 ## 🛠 本地开发
 
-环境要求：Node.js 18+、npm。
+环境要求：Node.js 22（推荐 `.node-version` / `.nvmrc` 指定版本）、npm。
 
 ```bash
 # 克隆仓库
 git clone https://github.com/Joshmax010/science-online-guide.git
 cd science-online-guide
 
-# 安装依赖
-npm install
+# 按锁文件安装依赖并校验原始资料
+npm ci
+npm run verify:originals
+npm test
 
 # 启动开发服务器（默认 http://localhost:5173）
 npm run docs:dev
@@ -106,7 +120,7 @@ npm run docs:preview
 
 ## ☁️ 部署
 
-本项目面向 **Cloudflare Pages**（免费、全球 CDN、国内可访问）。如需部署到自己的 fork：
+本项目面向 **Cloudflare Pages**（免费、全球 CDN；国内可达性取决于网络）。如需部署到自己的 fork：
 
 1. Fork 本仓库到你的 GitHub
 2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → Workers & Pages → Create application → Pages → Connect to Git
@@ -114,7 +128,7 @@ npm run docs:preview
 4. 构建配置：
    - **Build command**: `npm run docs:build`
    - **Build output directory**: `docs/.vitepress/dist`
-   - **Node version**: `20`（Settings → Environment variables → `NODE_VERSION=20`）
+   - **Node version**: `22.23.2`（Settings → Environment variables → `NODE_VERSION=22.23.2`，与仓库版本文件一致）
 5. 保存部署，自动获得 `xxx.pages.dev` 子域名
 
 ---

@@ -1,183 +1,109 @@
-# Cloudflare Pages 部署指南（5 分钟上线）
+# Cloudflare Pages 部署与账号迁移
 
-本指南教你把 **科学上网完全指南** 部署到 Cloudflare Pages，获得免费的 `xxx.pages.dev` 域名，**国内可直接访问，完全免费**。
+- 现有网站：<https://science-online-guide.pages.dev>
+- 源码仓库：<https://github.com/Joshmax010/science-online-guide>
 
----
+换电脑接手先读 [MAINTENANCE.md](MAINTENANCE.md)。本说明使用相对路径，不依赖旧电脑目录；免费托管不代表所有地区、运营商下始终可达。
 
-## 准备工作（1 分钟）
+## 1. 继续维护现有站点
 
-你需要：
-- 一个 **GitHub 账号**（没有就去 github.com 注册）
-- 已经在本地生成好的项目文件（已经帮你准备好了）
-
----
-
-## 步骤 1：创建 GitHub 仓库（1 分钟）
-
-1. 打开 https://github.com/new
-2. 仓库名：`science-online-guide`（或你喜欢的名字）
-3. 设为 **Public**（公开）
-4. **不要**勾选 "Add a README file"（我们已经有了）
-5. 点击 **Create repository**
-
----
-
-## 步骤 2：推送代码到 GitHub（1 分钟）
-
-在你的电脑上打开终端（PowerShell / CMD / Git Bash），运行：
+使用原 GitHub/Cloudflare 账户，克隆同一仓库即可，无需重建 Pages 项目：
 
 ```bash
-# 进入项目目录（根据你的实际路径调整）
-cd "D:\AAAAAAAAA\ai work\hermes\science-online-guide"
-
-# 初始化 git（如果还没初始化）
-git init
-
-# 添加所有文件
-git add .
-
-# 提交
-git commit -m "feat: 初始化科学上网完全指南"
-
-# 关联远程仓库（把 YOUR_USERNAME 换成你的 GitHub 用户名）
-git remote add origin https://github.com/YOUR_USERNAME/science-online-guide.git
-
-# 推送
-git branch -M main
-git push -u origin main
+git clone https://github.com/Joshmax010/science-online-guide.git
+cd science-online-guide
+npm ci
+npm run verify:originals
+npm test
+npm run docs:build
 ```
 
-> 💡 如果提示输入用户名/密码，用户名填 GitHub 用户名，密码填 **Personal Access Token**（不是登录密码）。  
-> Token 生成：GitHub Settings → Developer settings → Personal access tokens → Generate new token (classic) → 勾选 `repo` 权限。
+Node.js 推荐版本见 `.node-version` / `.nvmrc`（本次测试 22.23.2）。`package-lock.json` 决定依赖版本，迁移优先使用 `npm ci`，不要通过删除锁文件来“解决”安装问题。
 
----
+编辑并检查后，只暂存需要发布的文件、提交、推送到 `main`。在 Cloudflare Pages 后台确认新部署的提交与 GitHub 一致，并查看完整日志和最终状态。最后用浏览器验证线上导航、图片与评论。
 
-## 步骤 3：部署到 Cloudflare Pages（2 分钟）
+## 2. 新账户 / Fork 重建站点
 
-### 3.1 登录 Cloudflare
-打开 https://dash.cloudflare.com/，登录或注册（免费）。
+只有改用新 Cloudflare 账户或新 GitHub 仓库时才需要重新授权并创建 Pages 项目。
 
-### 3.2 创建 Pages 项目
-1. 左侧菜单点击 **Workers & Pages**
-2. 点击 **Create application** → **Pages** → **Connect to Git**
-3. 选择 **GitHub**，授权 Cloudflare 访问你的仓库
-4. 选择刚才创建的 `science-online-guide` 仓库
-5. 点击 **Begin setup**
+1. 登录 Cloudflare Dashboard 的 Workers & Pages，创建 Pages 项目并选择 Git 集成（界面名称可能变化）。
+2. 授权 Cloudflare GitHub App 访问目标仓库。
+3. 选择仓库和生产分支 `main`。
+4. 使用下列构建配置：
 
-### 3.3 配置构建设置
+| 配置 | 值 |
+|---|---|
+| Root directory | 仓库根目录（留空） |
+| Build command | `npm run docs:build` |
+| Build output directory | `docs/.vitepress/dist` |
+| Production branch | `main` |
+| Node 环境 | 建议 `NODE_VERSION=22.23.2`，与仓库版本文件一致 |
 
-| 设置项 | 值 |
-|--------|-----|
-| **Project name** | `science-online-guide`（或你想要的子域名前缀） |
-| **Production branch** | `main` |
-| **Build command** | `npm run docs:build` |
-| **Build output directory** | `docs/.vitepress/dist` |
-| **Root directory** | （留空） |
+当前网站运行不要求将 GitHub PAT、Cloudflare API token 或 Hermes API key 写进项目。需要服务授权时在账户后台或设备凭证管理器设置。
 
-**Environment variables（环境变量）**：
-- 点击 **Add variable** → 不需要加任何变量，直接跳过
+若新项目获得不同域名，维护这些公开地址：
 
-### 3.4 点击部署
+- README 的在线阅读链接；
+- `docs/.vitepress/config.ts` 中 `sitemap.hostname` 和 Open Graph 的 `og:url`；
+- `docs/public/robots.txt` 中 sitemap 地址；
+- 首页、维护文档中手工写入的站点/仓库链接。
 
-点击 **Save and Deploy**，等待 1-2 分钟构建完成。
+现有项目不购买自定义域名，是作者的明确选择。
 
----
+## 3. 评论系统 giscus
 
-## 步骤 4：访问你的网站（秒开）
+同一仓库继续使用当前主题的公开 repo/category ID，无需重新配置。评论保存在 GitHub Discussions，不随 Git 克隆/ZIP 转移。
 
-构建成功后，你会得到一个免费域名：
+Fork 到新仓库时：
 
-```
-https://science-online-guide.pages.dev
-```
+1. 在 GitHub 仓库设置开启 Discussions。
+2. 安装 giscus App，授予新仓库权限。
+3. 在 <https://giscus.app/zh-CN> 获取新 repo ID、分类 ID。
+4. 更新 `docs/.vitepress/theme/index.ts` 的 repo 与 ID，保留适当的 pathname mapping 和中文设置。
+5. 用浏览器测试首次打开、刷新、站内路由切换和明暗主题。
 
-或者你自定义的项目名：
-```
-https://你的项目名.pages.dev
-```
+当前评论按钮锚点、脚本渲染与路由切换还有待复核的事项，见 MAINTENANCE.md。不能仅凭 JS bundle 中存在 `giscus` 字样宣称评论正常。
 
-**国内直接可访问，速度很快！** 🎉
+## 4. 统计
 
----
+- Cloudflare Web Analytics 是账户侧设置。作者历史上确认已开启；换电脑继续用原账户保留后台项目，新账户则重新开启。本次备份不导出后台分析数据。
+- 不蒜子脚本保存在 `docs/public/busuanzi.pure.mini.js`，但计数服务仍是外部服务，断网不能保证统计显示。
+- 首页的 `...` 不是正确计数证明。实际检查网络请求和浏览器行为，需排除扩展拦截和第三方不可达。
 
-## 后续更新
+## 5. 常见故障
 
-以后修改内容只需要：
+### 本地有配置，线上没有
+
+运行：
 
 ```bash
-# 修改 docs/ 里的 .md 文件后
-git add .
-git commit -m "update: 修正了某个步骤"
-git push
+git ls-files docs/.vitepress/config.ts docs/.vitepress/theme/index.ts
+git check-ignore docs/.vitepress/config.ts docs/.vitepress/theme/index.ts
 ```
 
-**Cloudflare Pages 会自动检测到 push 并重新部署**，几分钟后新内容自动生效。
+两份源码应出现在 `git ls-files` 中，不应被忽略；`git check-ignore` 找不到匹配时返回非零是正常结果。仅忽略 dist/cache，不忽略整个 `.vitepress/`。
 
----
+### `ERR_UNSUPPORTED_ESM_URL_SCHEME` / `https:` 构建失败
 
-## 常见问题
+检查是否把外部 `<script src>` 放在 Markdown 顶层，导致 Vue 把它解释成模块导入。优先使用明确的客户端加载方式，不靠更换 Node 版本来掩盖原因。当前不蒜子方案已能构建，但仍需运行时验证。
 
-### Q: 构建失败了怎么办？
-看构建日志，常见原因：
-- Node 版本问题 → Cloudflare Pages 默认用 Node 18+，VitePress 1.x 兼容
-- 依赖安装失败 → 尝试在本地先跑 `npm run docs:build` 确认没问题再推
+### 章节或图片在 GitHub 上打不开
 
-### Q: 想用自己的域名？
-在 Cloudflare Pages 项目设置 → **Custom domains** → 添加你的域名。需要域名在 Cloudflare 托管 DNS（改 NS 到 Cloudflare）。
+正文互链使用 `.md` 后缀的相对路径，图片使用 `./images/…`；网站根 `/images/…` 在 GitHub Markdown 中会指向错误的位置。
 
-### Q: 怎么看访问统计？
-Cloudflare Pages → 项目 → **Analytics**，免费看访问量、来源等。
+### 推送失败
 
-### Q: 可以加密码访问吗？
-Cloudflare Pages 不直接支持密码保护。可以用 Cloudflare Workers 做简单鉴权，或用 Cloudflare Access（免费 50 用户）。
+检查当前 GitHub 账户对仓库的写权限、认证和网络。Git 的代理地址由新设备实际环境决定，不复制旧设备全局代理。token 不写入 remote URL 或公共文件。出现分叉时先查看历史再协调，不直接 force push。
 
----
+### 构建成功但页面还是旧版
 
-## 项目结构说明
+先检查 Cloudflare 部署所用提交、构建结果和输出目录，再看缓存/浏览器；成功 push 不等于成功发布，不反复靠修改无关文件触发部署来替代诊断。
 
-```
-science-online-guide/
-├── docs/
-│   ├── .vitepress/
-│   │   └── config.ts      # VitePress 配置
-│   ├── index.md           # 首页
-│   ├── 01-why.md          # 章节文件
-│   ├── 02-concepts.md
-│   ├── 03-clients.md
-│   ├── 04-airports.md
-│   ├── 05-windows.md
-│   ├── 06-mobile.md
-│   ├── 07-comparison.md
-│   ├── 08-faq.md
-│   └── 09-safety.md
-├── package.json
-└── README.md
-```
+## 6. 发布前检查
 
----
-
-## 本地预览（可选）
-
-```bash
-# 安装依赖（首次）
-npm install
-
-# 启动开发服务器
-npm run docs:dev
-# 打开 http://localhost:5173 预览
-```
-
----
-
-## 完成！🎉
-
-现在你有了一个：
-- ✅ **完全免费**的技术文档站
-- ✅ **国内可直接访问**（Cloudflare Pages 有亚洲节点）
-- ✅ **自动 HTTPS**
-- ✅ **Git 推送即更新**
-- ✅ **无需备案、无需服务器**
-
-把链接发给需要的人吧！# 触发重新部署
-
-# 重新部署触发 2026年08月22日 11:19:20
+- 完整运行 `npm ci`、原件校验、测试和构建，退出码为零。
+- 改动未误删原文、图片或推广链接。
+- 当前公开文件没有账号密钥、私人订阅和设备绝对路径。
+- 网站和 GitHub Markdown 都检查过图片/章节跳转。
+- 推送后核对远端提交，并在 Cloudflare 后台核对同一提交。
+- 评论、统计、404 等客户端行为另做浏览器验证；未验证的就明确记为待办。

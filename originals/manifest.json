@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "note": "Relative paths only. Original DOCX/Markdown bytes are unchanged. Images are lossless historical originals, not reconverted WebP.",
+  "files": [
+    {
+      "path": "originals/科学上网完全指南.docx",
+      "bytes": 5282185,
+      "sha256": "bc0d3dcf01e6c1cd8b954bacbc00e1e90cb87320b0253d9d6bc7c6908a5d32d3",
+      "origin": "author-provided attachment; byte-for-byte copy"
+    },
+    {
+      "path": "originals/科学上网完全指南.md",
+      "bytes": 29215,
+      "sha256": "55679cab21c761b9f95cd12caf2b2fcf56747353c537ff16fdd7ea1efd858f7a",
+      "origin": "author-provided attachment; byte-for-byte copy"
+    },
+    {
+      "path": "originals/图片和附件/微信图片_20260808101950_14797_4.jpg",
+      "bytes": 196937,
+      "sha256": "0ece89248efdd5d4b69f770c20fa286d0e1a1d6846ff70fc6e7748322c27fc22",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image1.jpeg"
+    },
+    {
+      "path": "originals/图片和附件/Screenshot_20260816_163339_com_v2ray_ang_MainActivity.jpg",
+      "bytes": 460061,
+      "sha256": "27669dca3bb47ed7e2ec99fcce68eaa74de02d445aabf20a7094c90f225382e3",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image2.jpeg"
+    },
+    {
+      "path": "originals/图片和附件/6d520a53ba786521aed5d1b41f8e7db4.jpg",
+      "bytes": 189827,
+      "sha256": "8759c43f632725dfc9150bf96c17d16079936577ce2b8d1208725bcfdbfe7f84",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image3.jpeg"
+    },
+    {
+      "path": "originals/图片和附件/capture_20260816144430590.png",
+      "bytes": 171207,
+      "sha256": "bb6f1b95e0faf629ca96aecc3f197ca4e79509de40ae9dbeb09fa1adce2d94b7",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image4.png"
+    },
+    {
+      "path": "originals/图片和附件/capture_20260816134029557.png",
+      "bytes": 314360,
+      "sha256": "d124441e47d5048b9b60cc8160ac2831001ad4e048c8d2d317a13f0605faebc4",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image5.png"
+    },
+    {
+      "path": "originals/图片和附件/capture_20260816135750286.png",
+      "bytes": 211240,
+      "sha256": "414ea9b9eb7b2ae0fa2d1f9d2853642deffa2bb18fe5050423ebfcd32866be96",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image6.png"
+    },
+    {
+      "path": "originals/图片和附件/image 2.png",
+      "bytes": 369880,
+      "sha256": "0f7aced7223a8994391aca1f7c7f676afcecb0e4159204ef64ad234ce5a96021",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image7.png"
+    },
+    {
+      "path": "originals/图片和附件/capture_20260816141758629.png",
+      "bytes": 207722,
+      "sha256": "611657fbe64ead1119b5c19c7bdd5a439b18d9bb4d8d6245965e9d491f1111e6",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image8.png"
+    },
+    {
+      "path": "originals/图片和附件/capture_20260816142858869.png",
+      "bytes": 279633,
+      "sha256": "0d8dbf22482a89129548a276e38f189c29ec5e1374be1ec83c239c387ea5e57d",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image9.png"
+    },
+    {
+      "path": "originals/图片和附件/image 3.png",
+      "bytes": 1153593,
+      "sha256": "8ab2c5fffee13bffc2d84a6e61c399bba0e73439afefc1cfd25b2afdd2378783",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image10.png"
+    },
+    {
+      "path": "originals/图片和附件/image 4.png",
+      "bytes": 751371,
+      "sha256": "8d3b0a35b6cfab16dfc8f57ae0468fae9a4eaf9774ddf377295f04119a7c339f",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image11.png"
+    },
+    {
+      "path": "originals/图片和附件/image 1.png",
+      "bytes": 539019,
+      "sha256": "a17fef34bca4abbdf79344ac30cb9e8f6235835137d831836dee09d29976a272",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image12.png"
+    },
+    {
+      "path": "originals/图片和附件/image.png",
+      "bytes": 721296,
+      "sha256": "fe707273f700b1d0f42a8b48874b7041d4b41af3d07d047a078287929810f383",
+      "origin": "restored from Git history (38d9f71), identical to DOCX embedded media",
+      "docx_media": "word/media/image13.png"
+    }
+  ]
+}

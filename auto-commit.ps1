@@ -6,7 +6,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$repoPath = "D:\AAAAAAAAA\ai work\hermes\science-online-guide"
+$repoPath = $PSScriptRoot
 
 Set-Location $repoPath
 
