@@ -86,6 +86,7 @@
 - [AI 接手约定](AGENTS.md)：新会话先读，维护不依赖旧聊天记录。
 - [原始资料](originals/README.md)：原版 DOCX、Markdown、13 张原图及 SHA-256 清单。
 - [部署与账号迁移](DEPLOY.md)：继续维护现有 Cloudflare Pages 或重建站点。
+- [迁移验证记录](MIGRATION-VERIFICATION.md)：全新目录安装、原件校验、测试和构建的实际结果。
 - [备份工具](scripts/backup.py)：导出含源码、原件、Git 历史和静态网站的 ZIP；需要 Python 3.9+。
 
 公共文件只使用相对路径；设备配置和账号密钥不随仓库转移。旧 Git 历史按作者选择保留。
