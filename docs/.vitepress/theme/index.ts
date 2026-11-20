@@ -7,6 +7,7 @@ import mediumZoom from 'medium-zoom'
 // giscus 评论：直接渲染 script 标签，让浏览器执行
 function Comments() {
   return h('div', {
+    id: 'comments',
     class: 'giscus-wrapper',
     style: { marginTop: '48px', paddingTop: '24px', borderTop: '1px solid var(--vp-c-divider)' },
     key: useRoute().path,

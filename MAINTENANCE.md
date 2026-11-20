@@ -57,7 +57,7 @@ npm run docs:dev
 | `package.json` / `package-lock.json` | 命令及依赖版本 | 配套维护 |
 | `scripts/verify-originals.mjs` | 原件 SHA-256 与大小校验 | 工具源码 |
 | `scripts/backup.py` | 导出 ZIP、Git bundle、静态站点和哈希 | 可移植，仅需 Python 标准库 |
-| `tests/` | 原件校验、路径可移植性、备份恢复测试 | 修改对应工具后运行 |
+| `tests/` | 原件校验、链接与图片、路径可移植性、备份恢复测试 | 修改对应工具后运行 |
 | `auto-commit.ps1` | Windows 可选提交/推送助手 | 使用脚本所在目录，不固定设备路径 |
 
 `node_modules/`、`docs/.vitepress/dist/`、`docs/.vitepress/cache/` 不提交。维护文档和 `originals/` 在站点根 `docs/` 之外，不会被 VitePress 当作网站页面。
@@ -97,6 +97,8 @@ git ls-remote origin refs/heads/main
 `auto-commit.ps1` 会自动暂存项目里的改动并推送，使用前先审查 Git 状态。直接手工执行 Git 命令更容易控制提交范围。任何失败都应看完整日志与退出码，不能用管道末尾命令的成功冒充构建或推送成功。
 
 推送并不等于网页已经部署。进入 Cloudflare Pages，找到与远端提交匹配的部署，查看构建、发布结果；完成后再验证页面/浏览器端行为。详细配置见 [DEPLOY.md](DEPLOY.md)。
+
+仓库另有 GitHub Actions 自动检查（`.github/workflows/ci.yml`，2026-11-20 起）：每次推送到 `main` 或提交 PR 时自动跑 `npm ci`、原件校验、测试与构建，结果在仓库 Actions 页查看。它不拦截 Cloudflare 部署，红了说明刚推的内容有问题，要尽快修复。`npm test` 还包含链接与图片检查（`tests/links.test.mjs`）：README 与 `docs/` 的相对链接、图片引用必须指向真实文件，`docs/images/` 不留未被引用的图片，README 与第四章的机场推荐表必须逐行一致，首页评论按钮的 `#comments` 锚点必须在主题里有对应容器。
 
 ## 6. 外部服务与账号交接
 
@@ -139,7 +141,7 @@ Git 全局代理、编辑器、Hermes 配置和系统软件不在仓库。新设
 
 ### 不在本次迁移中擅自修复的事项
 
-- 首页评论按钮指向 `08-faq.html#comments`，当前主题未看到相应 `id="comments"`；需浏览器检查，可能不能准确滚到评论区。
+- 首页评论按钮指向 `08-faq.html#comments`：主题评论容器已于 2026-11-20 补上 `id="comments"`，并有自动检查守住该锚点；点击后能否准确滚到评论区仍需浏览器复核。
 - giscus 的直接 script 渲染、刷新/SPA 切换、明暗主题同步需浏览器验证；构建通过不能验证评论功能。
 - 不蒜子首次打开、站内返回首页的实际计数行为，以及跨域脚本是否加载成功，需浏览器验证。
 - `docs/404.md` 使用 `layout: not-found`，实际中文内容是否被默认布局展示需浏览器复核。

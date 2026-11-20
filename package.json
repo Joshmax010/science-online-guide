@@ -9,7 +9,7 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "verify:originals": "node scripts/verify-originals.mjs",
-    "test": "node --test tests/originals.test.mjs tests/portability.test.mjs"
+    "test": "node --test tests/originals.test.mjs tests/portability.test.mjs tests/links.test.mjs"
   },
   "engines": {
     "node": ">=22 <23"
