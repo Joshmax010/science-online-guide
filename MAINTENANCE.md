@@ -98,7 +98,7 @@ git ls-remote origin refs/heads/main
 
 推送并不等于网页已经部署。进入 Cloudflare Pages，找到与远端提交匹配的部署，查看构建、发布结果；完成后再验证页面/浏览器端行为。详细配置见 [DEPLOY.md](DEPLOY.md)。
 
-仓库另有 GitHub Actions 自动检查（`.github/workflows/ci.yml`，2026-11-20 起）：每次推送到 `main` 或提交 PR 时自动跑 `npm ci`、原件校验、测试与构建，结果在仓库 Actions 页查看。它不拦截 Cloudflare 部署，红了说明刚推的内容有问题，要尽快修复。`npm test` 还包含链接与图片检查（`tests/links.test.mjs`）：README 与 `docs/` 的相对链接、图片引用必须指向真实文件，`docs/images/` 不留未被引用的图片，README 与第四章的机场推荐表必须逐行一致，首页评论按钮的 `#comments` 锚点必须在主题里有对应容器。
+仓库预备了 GitHub Actions 自动检查（`.github/workflows/ci.yml`）：生效后，每次推送到 `main` 或提交 PR 时自动跑 `npm ci`、原件校验、测试与构建，结果在仓库 Actions 页查看。它不拦截 Cloudflare 部署，红了说明刚推的内容有问题，要尽快修复。注意：该文件尚未落入仓库——GitHub App 没有写入工作流文件的权限，需仓库所有者在网页端手动新建该文件后才生效（文件内容由 2026-11-20 的维护会话备好，存于维护环境本地副本的 `.github/workflows/ci.yml`）。`npm test` 还包含链接与图片检查（`tests/links.test.mjs`）：README 与 `docs/` 的相对链接、图片引用必须指向真实文件，`docs/images/` 不留未被引用的图片，README 与第四章的机场推荐表必须逐行一致，首页评论按钮的 `#comments` 锚点必须在主题里有对应容器。
 
 ## 6. 外部服务与账号交接
 
