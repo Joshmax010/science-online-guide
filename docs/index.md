@@ -1,9 +1,14 @@
+<script setup>
+import { useData } from 'vitepress'
+const { theme } = useData()
+</script>
+
 # 科学上网完全指南
 
 > 一份写给零基础小白的开放教程：教你用开源客户端搭配机场，5 分钟跑通第一次，常见问题逐个排查。
 
 <div style="display:inline-block; padding:4px 14px; margin:8px 0; background:var(--vp-c-brand-soft); border-radius:20px; font-size:0.9em;">
-  🕒 内容最后更新：<strong>2026-08-22</strong>（持续更新中）
+  🕒 内容最后更新：<strong>{{ theme.siteLastUpdated }}</strong>（持续更新中）
 </div>
 
 <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:12px 0 4px; font-size:0.9em;">

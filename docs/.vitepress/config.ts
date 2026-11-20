@@ -1,4 +1,25 @@
 import { defineConfig } from 'vitepress'
+import { execSync } from 'node:child_process'
+
+// 首页「内容最后更新」：构建时取仓库最新一次提交的日期（北京时间），
+// 每次推送重新构建都会自动刷新，不用再手工改日期。取不到 Git 历史时退回构建当天。
+function siteLastUpdated(): string {
+  let ts: number
+  try {
+    ts = Number(execSync('git log -1 --format=%ct', { encoding: 'utf-8' }).trim()) * 1000
+    if (!Number.isFinite(ts) || ts <= 0) throw new Error('no git history')
+  } catch {
+    ts = Date.now()
+  }
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(new Date(ts))
+  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? ''
+  return `${get('year')}-${get('month')}-${get('day')}`
+}
 
 export default defineConfig({
   title: '科学上网完全指南',
@@ -67,6 +88,9 @@ export default defineConfig({
     },
 
     editLink: false,
+
+    // 首页动态日期（构建时生成，见文件顶部 siteLastUpdated）
+    siteLastUpdated: siteLastUpdated(),
 
     docFooter: {
       prev: '上一篇',
