@@ -1,0 +1,27 @@
+name: CI
+
+# 每次推送到 main 或提交 PR 时，自动跑与本地发布前相同的全套检查。
+# 注意：它不拦截 Cloudflare Pages 的部署，只负责把问题显形；
+# 红了说明刚推的内容有问题，要尽快修复。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+          cache: npm
+      - run: npm ci
+      - run: npm run verify:originals
+      - run: npm test
+      - run: npm run docs:build
