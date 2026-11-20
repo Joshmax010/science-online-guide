@@ -80,60 +80,6 @@
 
 ---
 
-## 🧰 维护与换设备接手
-
-- [维护手册](MAINTENANCE.md)：新设备恢复、项目约定、外部服务和已知待办。
-- [AI 接手约定](AGENTS.md)：新会话先读，维护不依赖旧聊天记录。
-- [原始资料](originals/README.md)：原版 DOCX、Markdown、13 张原图及 SHA-256 清单。
-- [部署与账号迁移](DEPLOY.md)：继续维护现有 Cloudflare Pages 或重建站点。
-- [迁移验证记录](MIGRATION-VERIFICATION.md)：全新目录安装、原件校验、测试和构建的实际结果。
-- [备份工具](scripts/backup.py)：导出含源码、原件、Git 历史和静态网站的 ZIP；需要 Python 3.9+。
-
-公共文件只使用相对路径；设备配置和账号密钥不随仓库转移。旧 Git 历史按作者选择保留。
-
----
-
-## 🛠 本地开发
-
-环境要求：Node.js 22（推荐 `.node-version` / `.nvmrc` 指定版本）、npm。
-
-```bash
-# 克隆仓库
-git clone https://github.com/Joshmax010/science-online-guide.git
-cd science-online-guide
-
-# 按锁文件安装依赖并校验原始资料
-npm ci
-npm run verify:originals
-npm test
-
-# 启动开发服务器（默认 http://localhost:5173）
-npm run docs:dev
-
-# 构建生产版本到 docs/.vitepress/dist
-npm run docs:build
-
-# 本地预览构建结果
-npm run docs:preview
-```
-
----
-
-## ☁️ 部署
-
-本项目面向 **Cloudflare Pages**（免费、全球 CDN；国内可达性取决于网络）。如需部署到自己的 fork：
-
-1. Fork 本仓库到你的 GitHub
-2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → Workers & Pages → Create application → Pages → Connect to Git
-3. 选择 fork 的仓库
-4. 构建配置：
-   - **Build command**: `npm run docs:build`
-   - **Build output directory**: `docs/.vitepress/dist`
-   - **Node version**: `22.23.2`（Settings → Environment variables → `NODE_VERSION=22.23.2`，与仓库版本文件一致）
-5. 保存部署，自动获得 `xxx.pages.dev` 子域名
-
----
-
 ## ⚖️ 免责声明
 
 - 本教程仅用于**技术学习与信息获取的科普目的**
@@ -147,10 +93,7 @@ npm run docs:preview
 
 ## 🙏 致谢
 
-本项目由作者基于三年实际使用经验整理，并在以下 AI 工具的辅助下完成：
-
-- 🤖 **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** —— 提供本地开发环境、终端操作、文件编辑、Git 提交流程等工具支持
-- 🧠 **[Claude](https://github.com/anthropics/claude-code)** —— 协助内容结构化、代码片段、文档润色与排版
+本项目由作者基于三年实际使用经验整理，感谢 Muse 在内容整理与项目维护中提供的协助。
 
 感谢开源社区让一个人也能维护一份完整的开放教程。
 

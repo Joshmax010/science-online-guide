@@ -9,7 +9,7 @@
 - 在线站点：<https://science-online-guide.pages.dev>。
 - 技术：VitePress + Vue，静态网站，GitHub 托管源码，Cloudflare Pages 构建部署。
 - 原始文件在 `originals/`；当前阅读/发布版本在 `docs/`，二者有格式、链接及少量已授权文字修正差异。
-- 作者说明：文章由 Claude 辅助完成，Hermes Agent 提供文件编辑、构建及 Git 等工具支持。README 致谢不意味着 AI 有独立 GitHub 提交身份。
+- 作者说明：README 致谢对象为 Muse（2026-11-20 作者定，此前版本致谢 Claude 与 Hermes Agent，以 Git 历史为准）。致谢不意味着 AI 有独立 GitHub 提交身份。
 
 ## 2. 新设备最快接手
 
